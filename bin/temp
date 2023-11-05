@@ -1,0 +1,61 @@
+//Decide selected doctor
+		if((doctors.getSelection()==doctorOne.getModel())) {
+			//Patient & appointment info label
+			patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+"Ryan G. Allen");
+			patientInfo.setBounds(200, 100, 500, 250);//(x, y, width, height)
+			patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+			this.add(patientInfo);
+		}else if (doctors.getSelection()==doctorTwo.getModel()) {
+			//Patient & appointment info label
+			patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+"Chris T. Jefferson");
+			patientInfo.setBounds(200, 100, 500, 300);//(x, y, width, height)
+			patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+			this.add(patientInfo);
+		}else if (doctors.getSelection()==doctorThree.getModel()) {
+			//Patient & appointment info label
+			patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+"John V. Smith");
+			patientInfo.setBounds(200, 100, 500, 300);//(x, y, width, height)
+			patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+			this.add(patientInfo);
+		}else if(doctors.getSelection()==gail.getModel()) {
+			//Patient & appointment info label
+			patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+"Gail L. Prokop");
+			patientInfo.setBounds(200, 100, 400, 300);//(x, y, width, height)
+			patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+			this.add(patientInfo);
+		}else {
+			Random r = new Random();
+			int docNumber = r.nextInt(4);
+			
+			System.out.println("random was used");
+
+			switch(docNumber) {
+			case 0:
+				//Patient & appointment info label
+				patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+doctorOne.getText());
+				patientInfo.setBounds(200, 100, 500, 300);//(x, y, width, height)
+				patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+				this.add(patientInfo);
+				break;
+			case 1:
+				//Patient & appointment info label
+				patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+doctorTwo.getText());
+				patientInfo.setBounds(200, 100, 500, 300);//(x, y, width, height)
+				patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+				this.add(patientInfo);
+				break;
+			case 2:
+				//Patient & appointment info label
+				patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+doctorThree.getText());
+				patientInfo.setBounds(200, 100, 500, 300);//(x, y, width, height)
+				patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+				this.add(patientInfo);
+				break;
+			default:
+				//Patient & appointment info label
+				patientInfo = new JLabel(pat.toString()+"<html><br/><br/>Appointment Notes: <html>"+noteFromPatient+"<html><br/><br/>Doctor for Appointment:		<html>"+gail.getText());
+				patientInfo.setBounds(200, 100, 400, 300);//(x, y, width, height)
+				patientInfo.setFont(new Font("Arial", Font.PLAIN, 20));
+				this.add(patientInfo);
+				break;
+			}
