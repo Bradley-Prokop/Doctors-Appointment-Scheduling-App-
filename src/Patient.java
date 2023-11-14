@@ -15,7 +15,6 @@ public class Patient {
 		this.date=date;
 	}
 	
-	
 	public String getName() {
 		return name;
 	}
