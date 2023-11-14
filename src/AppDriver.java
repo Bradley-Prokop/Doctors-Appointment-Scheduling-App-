@@ -71,9 +71,12 @@ public class AppDriver extends JFrame implements ActionListener{
 			
 		//Background
 		this.getContentPane().setBackground(Color.LIGHT_GRAY);
-		this.setVisible(true);//keep last line
+		this.setVisible(true);
 	}
-	
+
+	/**
+	* This controls the flow of the program and the button logic.
+  	*/
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
@@ -89,7 +92,7 @@ public class AppDriver extends JFrame implements ActionListener{
 			showRecipt();
 		}
 	 
-	}//end method
+	}
 	
 	/**
 	 * The purpose of this method is to display all components of the first screen.
@@ -123,7 +126,7 @@ public class AppDriver extends JFrame implements ActionListener{
 	}
 	
 	/**
-	 * The purpose of this method is to hide and disable all components of the first screen.
+	 * The purpose of this method is to hide and disable all components of the first page.
 	 */
 	public void hideFirstPage(){
 		//Labels
@@ -136,7 +139,7 @@ public class AppDriver extends JFrame implements ActionListener{
 	}
 	
 	/**
-	 * The goal of this method is to display and enable all components for the second page
+	 * The goal of this method is to display and enable all components for the second page.
 	 */
 	public void showSecondPage() {
 		
@@ -230,7 +233,6 @@ public class AppDriver extends JFrame implements ActionListener{
 		this.add(enteredDateForAppointment);
 		
 		//RadioButtons & ButtonGroup 
-		
 		//doctorOne
 		doctorOne = new JRadioButton("Ryan G. Allen");
 		doctorOne.setBounds(600, 200, 100, 25);
@@ -275,7 +277,6 @@ public class AppDriver extends JFrame implements ActionListener{
 		doctors.add(randomDoctor);
 		
 		//BUTTONS
-		
 		//Back Button  
 		homePage = new JButton("Back");
 		homePage.setBounds(340, 470, 100, 50);//(x, y, width, height)
@@ -302,7 +303,7 @@ public class AppDriver extends JFrame implements ActionListener{
 	}
 	
 	/**
-	 * The goal of this method is to hide and disable all components for the second page
+	 * The goal of this method is to hide and disable all components for the second page.
 	 */
 	public void hideSecondPage() {
 		//Labels
@@ -346,7 +347,7 @@ public class AppDriver extends JFrame implements ActionListener{
 	}
 
 	/**
-	 * Shows a receipt with all the info 
+	 * Shows a receipt with all the appointment and patient information. 
 	 */
 	public void showRecipt() {
 		//Hide the first page
