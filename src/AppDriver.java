@@ -57,7 +57,10 @@ public class AppDriver extends JFrame implements ActionListener{
 	public static void main(String[] args) {
 		new AppDriver();
 	}
-	
+
+	/**
+ 	* This constructor sets up the window size and some default settings.
+  	*/
 	public AppDriver() {
 		//GUI setup 
 		this.setTitle("Medical Appointment Maker");
